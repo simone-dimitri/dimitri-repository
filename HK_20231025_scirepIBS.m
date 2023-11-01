@@ -48,7 +48,7 @@ flagIBS = {'noIBS','IBS'};
 %%%%%%%%%%%%%%%%%%%%%%
 
 %% General
-Q = 50e-12;                        % total bunch charge in [C]
+Q = 500e-12;                        % total bunch charge in [C]
 I0 = 7;                            % initial peak current in [A]
 E0 = 100;                            % initial mean energy in [MeV]
 enx = 1e-6;                         % normalized horizontal emittance rms in [m rad]
@@ -76,9 +76,9 @@ betay1 = 10;        % average vertical betatron function in [m]
 rw1 = 10e-3;        % average inner radius of round vacuum chamber in [m]
 
 %% BC1
-C1 = 1.25;            % linear compression factor
-theta1 = 0.39;     % dipole bending angle in [rad]
-Lb1 = 0.67;        % dipole length in [m]
+C1 = 10;            % linear compression factor
+theta1 = 0.085;     % dipole bending angle in [rad]
+Lb1 = 0.3;        % dipole length in [m]
 DL1 = 1;         % drift length between outer and inner dipole of chicane, in [m]
 alpha1_in = 1;      % horizontal alpha-function at entrance of chicane
 alpha1_w = 0;
@@ -88,14 +88,14 @@ R561_spec = -0.13;      % R561 user-defined in [m], replaces R561 calculated for
 
 %% LINAC2+LINAC3
 L2 = 1;            % Linac(2+3) path length in [m]
-Ef2 = 580;          % final mean energy in [MeV]
+Ef2 = 280;          % final mean energy in [MeV]
 betax2 = 5;        % average horizontal betatron function in [m]
 betay2 = 5;        % average vertical betatron function in [m]
 rw2 = 10e-3;        % average inner radius of round vacuum chamber in [m]
 
 %% BC2
-C2 = 0.8;             % linear compression factor
-theta2 = 0.039;         % dipole bending angle in [rad]
+C2 = 1;             % linear compression factor
+theta2 = 0.;         % dipole bending angle in [rad]
 Lb2 = 0.67;        % dipole length in [m]
 DL2 = 2.65;         % drift length between outer and inner dipole of chicane, in [m]
 alpha2_in = 1;      % horizontal alpha-function at entrance of chicane
@@ -105,8 +105,8 @@ beta2_w = 5;        % horizontal betatron function at waist in the second half o
 R562_spec = -0.13;      % R562 user-defined in [m], replaces R561 calculated for a chicane from theta2
 
 %% LINAC4
-L3 = 0.01;            % Linac4 path length in [m]
-Ef3 = 580;         % final mean energy in [MeV]
+L3 = 100;            % Linac4 path length in [m]
+Ef3 = 1320;         % final mean energy in [MeV]
 betax3 = 15;        % average horizontal betatron function in [m]
 betay3 = 15;        % average vertical betatron function in [m]
 rw3 = 10e-3;        % average inner radius of round vacuum chamber in [m]
