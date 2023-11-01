@@ -54,8 +54,8 @@ flagSpreader = {'woS','wS','wS','wS'};
 %%%%%%%%%%%%%%%%%%%%%%
 
 %% General
-Q = 50e-12;          % total bunch charge in [C]
-I0 = 7;              % initial peak current in [A]
+Q = 500e-12;          % total bunch charge in [C]
+I0 = 70;              % initial peak current in [A]
 E0 = 100e6;            % initial mean energy in [eV]
 enx = 0.5e-6;           % normalized horizontal emittance rms in [m rad]
 eny = 0.5e-6;           % normalized vertical emittance rms in [m rad]
@@ -76,15 +76,15 @@ rw0 = 10e-3;        % average inner radius of round vacuum chamber in [m]
 %% LINAC1
 L1 = 95;            % Linac1 path length in [m]
 Ei1 = Ef0;          % initial mean energy in [eV]
-Ef1 = 580e6;          % final mean energy in [eV]
+Ef1 = 280e6;          % final mean energy in [eV]
 betax1 = 10;        % average horizontal betatron function in [m]
 betay1 = 10;        % average vertical betatron function in [m]
 rw1 = 10e-3;        % average inner radius of round vacuum chamber in [m]
 
 %% BC1
-C1 = 1;            % linear compression factor
-theta1 = 0.;     % dipole bending angle in [rad]
-Lb1 = 0.67;        % dipole length in [m]
+C1 = 10;            % linear compression factor
+theta1 = 0.085;     % dipole bending angle in [rad]
+Lb1 = 0.3;        % dipole length in [m]
 DL1 = 1;         % drift length between outer and inner dipole of chicane, in [m]
 D112 = 1.0;         % drift length after dipole-2
 D113 = DL1;
@@ -97,15 +97,15 @@ R561_spec = -0;      % R561 user-defined in [m], replaces R561 calculated for a 
 
 %% LINAC2+LINAC3
 L2 = 130;            % Linac(2+3) path length in [m]
-Ef2 = 1000e6;        % final mean energy in [eV]
+Ef2 = 1320e6;        % final mean energy in [eV]
 betax2 = 7;        % average horizontal betatron function in [m]
 betay2 = 7;        % average vertical betatron function in [m]
 rw2 = 10e-3;        % average inner radius of round vacuum chamber in [m]
 
 %% BC2
-C2 = 100;             % linear compression factor
-theta2 = 0.19;         % dipole bending angle in [rad]
-Lb2 = 0.67;        % dipole length in [m]
+C2 = 1;             % linear compression factor
+theta2 = 0.;         % dipole bending angle in [rad]
+Lb2 = 0.3;        % dipole length in [m]
 DL2 = 2;         % drift length between outer and inner dipole of chicane, in [m]
 D212 = 1.0;         % drift length after dipole-2
 D213 = DL2;
